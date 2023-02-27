@@ -10,15 +10,12 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_07_18_134231) do
+ActiveRecord::Schema.define(version: 2021_07_18_144445) do
 
-  create_table "games", force: :cascade do |t|
-    t.string "title"
-    t.string "genre"
-    t.string "platform"
-    t.integer "price"
-    t.datetime "created_at", precision: 6, null: false
-    t.datetime "updated_at", precision: 6, null: false
+  create_table "spells", force: :cascade do |t|
+    t.string "name"
+    t.integer "level"
+    t.string "description"
   end
 
 end
